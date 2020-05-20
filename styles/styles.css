@@ -147,7 +147,7 @@ html {
   border-radius: 50px;
   padding: 12px;
 }
-/* header off */
+
 .list-cards-partners {
   display: flex;
   justify-content: space-between;
@@ -264,6 +264,7 @@ html {
   }
   .main-heading {
     font-size: 3rem;
+    margin-bottom: 18px;
   }
   .header-background {
     padding-bottom: 138px;
