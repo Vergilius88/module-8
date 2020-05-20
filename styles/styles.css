@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  display: block;
+}
+html {
+  font-size: 10px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.header-background {
+  background-color: rgb(26, 25, 21);
+  background-image: url(../image/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 234px;
+  margin-bottom: 70px;
+}
+.container {
+  max-width: 942px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.wrapper-authorization {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 0;
+  margin-bottom: 110px;
+}
+.main-heading,
+.headline,
+.subtitle,
+.partners-name,
+.partners-about-yourself,
+.find-partner,
+.other-partners {
+  text-align: center;
+}
+.logo {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+.authorization-button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  padding: 9px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+}
+.authorization-button:hover {
+  border-color: rgb(255, 255, 255);
+}
+.main-heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.2rem;
+  color: rgb(255, 255, 255);
+  max-width: 505px;
+  margin: 0 auto 38px;
+}
+.find-partner {
+  color: rgb(255, 255, 255);
+  max-width: 225px;
+  background-color: rgb(255, 78, 80);
+}
+.headline {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  color: rgb(255, 255, 255);
+  margin: 0 auto 35px;
+}
+.find-partner,
+.other-partners {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  border-radius: 50px;
+  padding: 12px;
+}
+/* header off */
+.list-cards-partners {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+.cards-partners {
+  max-width: 23.3%;
+}
+.partners-photo {
+  border-radius: 90px;
+}
+.partners-photo-wrapper {
+  position: relative;
+  max-width: 120px;
+  margin: 0 auto 20px;
+}
+.partners-photo-wrapper::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 90px;
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tv-icon::after {
+  background-color: rgb(255, 78, 80);
+  background-image: url(../image/tv.png);
+}
+.coffee-icon::after {
+  background-color: rgb(28, 215, 173);
+  background-image: url(../image/coffee.png);
+}
+.test-tube-icon::after {
+  background-color: rgb(255, 165, 7);
+  background-image: url(../image/test-tube.png);
+}
+.twitter-icon::after {
+  background-color: rgb(78, 115, 219);
+  background-image: url(../image/twitter.png);
+}
+.subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: rgb(51, 51, 51);
+  margin-bottom: 30px;
+}
+.partners-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: rgb(51, 51, 51);
+  margin: 0 auto 20px;
+}
+.partners-about-yourself {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: rgb(102, 102, 102);
+}
+.other-partners {
+  box-sizing: border-box;
+  max-width: 192px;
+  color: rgb(255, 78, 80);
+  border: 2px solid;
+  border-color: rgb(255, 78, 80);
+}
+.section-partners {
+  padding-bottom: 73px;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 748px;
+    padding: 0 38px;
+  }
+  .list-cards-partners {
+    max-width: 66%;
+    flex-wrap: wrap;
+    margin: 0 auto 32px;
+  }
+  .cards-partners {
+    max-width: 48%;
+  }
+  .cards-partners:nth-child(-n + 2) {
+    margin-bottom: 58px;
+  }
+  .authorization-button:focus {
+    border-color: rgb(255, 255, 255);
+  }
+  .section-partners {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 320px;
+  }
+  .wrapper-authorization {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .authorization-button {
+    margin-bottom: 130px;
+  }
+  .main-heading {
+    font-size: 3rem;
+  }
+  .header-background {
+    padding-bottom: 138px;
+  }
+  .headline {
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+  }
+  .find-partner {
+    max-width: 280px;
+  }
+  .list-cards-partners {
+    flex-direction: column;
+    margin-bottom: 28px;
+  }
+  .cards-partners {
+    max-width: 100%;
+  }
+  .cards-partners:not(:last-child) {
+    margin-bottom: 26px;
+  }
+  .section-partners {
+    padding-bottom: 57px;
+  }
+}
