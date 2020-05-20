@@ -69,20 +69,21 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  padding-bottom: 234px;
+  padding-bottom: 138px;
   margin-bottom: 70px;
 }
 .container {
-  max-width: 942px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 10px;
 }
 .wrapper-authorization {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
-  padding: 37px 0;
-  margin-bottom: 110px;
+  margin: 0;
+  padding: 30px 0;
 }
 .main-heading,
 .headline,
@@ -111,31 +112,33 @@ html {
   border-style: solid;
   border-width: 2px;
   border-color: transparent;
+  margin-bottom: 100px;
 }
-.authorization-button:hover {
+.authorization-button:focus {
   border-color: rgb(255, 255, 255);
 }
+
 .main-heading {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 5.2rem;
   color: rgb(255, 255, 255);
   max-width: 505px;
-  margin: 0 auto 38px;
+  font-size: 3rem;
+  margin: 0 auto 18px;
 }
 .find-partner {
   color: rgb(255, 255, 255);
-  max-width: 225px;
+  max-width: 280px;
   background-color: rgb(255, 78, 80);
 }
 .headline {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  margin: 0 auto 14px;
   color: rgb(255, 255, 255);
-  margin: 0 auto 35px;
 }
 .find-partner,
 .other-partners {
@@ -152,10 +155,15 @@ html {
 .list-cards-partners {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 38px;
+  flex-direction: column;
+  margin-bottom: 28px;
 }
 .cards-partners {
-  max-width: 23.3%;
+  max-width: 69%;
+  margin: 0 auto;
+}
+.cards-partners:not(:last-child) {
+  margin-bottom: 26px;
 }
 .partners-photo {
   border-radius: 90px;
@@ -221,73 +229,81 @@ html {
 }
 .other-partners {
   box-sizing: border-box;
-  max-width: 192px;
+  max-width: 280px;
   color: rgb(255, 78, 80);
   border: 2px solid;
   border-color: rgb(255, 78, 80);
 }
 .section-partners {
-  padding-bottom: 73px;
+  padding-bottom: 57px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 748px;
     padding: 0 38px;
   }
+  .header-background {
+    padding-bottom: 234px;
+  }
+  .wrapper-authorization {
+    flex-direction: row;
+    margin-bottom: 110px;
+  }
+  .authorization-button {
+    margin: 0 auto;
+  }
   .list-cards-partners {
     max-width: 66%;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto 32px;
   }
+  .main-heading {
+    font-size: 5.2rem;
+    margin: 0 auto 38px;
+  }
   .cards-partners {
     max-width: 48%;
+    margin-bottom: 0;
+  }
+  .find-partner {
+    max-width: 225px;
+  }
+  .other-partners {
+    max-width: 192px;
+  }
+  .cards-partners:not(:last-child) {
+    margin-bottom: 0;
   }
   .cards-partners:nth-child(-n + 2) {
     margin-bottom: 58px;
   }
-  .authorization-button:focus {
-    border-color: rgb(255, 255, 255);
+  .headline {
+    margin: 0 auto 35px;
+    font-size: 2.4rem;
   }
   .section-partners {
     padding-bottom: 40px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 320px;
+    max-width: 942px;
   }
-  .wrapper-authorization {
-    flex-direction: column-reverse;
-    margin: 0;
-  }
-  .authorization-button {
-    margin-bottom: 130px;
-  }
-  .main-heading {
-    font-size: 3rem;
-    margin-bottom: 18px;
-  }
-  .header-background {
-    padding-bottom: 138px;
-  }
-  .headline {
-    font-size: 1.8rem;
-    margin-bottom: 14px;
-  }
-  .find-partner {
-    max-width: 280px;
+  .authorization-button:hover {
+    border-color: rgb(255, 255, 255);
   }
   .list-cards-partners {
-    flex-direction: column;
-    margin-bottom: 28px;
+    max-width: 100%;
+    margin-bottom: 38px;
   }
   .cards-partners {
-    max-width: 100%;
+    max-width: 23.3%;
   }
-  .cards-partners:not(:last-child) {
-    margin-bottom: 26px;
+  .cards-partners:nth-child(-n + 2) {
+    margin-bottom: 0;
   }
   .section-partners {
-    padding-bottom: 57px;
+    padding-bottom: 73px;
   }
 }
